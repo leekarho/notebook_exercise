@@ -1,14 +1,15 @@
+require_relative 'note'
+
 class Notebook
 
-  attr_reader :notes
+  attr_reader :notes, :note
 
-  def intialize
+  def initialize
     @notes = []
   end
 
-  def add_note(note)
-    @notes << note
+  def add_notes(note)
+    notes << note.send
   end
-
 
 end
